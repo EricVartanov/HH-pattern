@@ -1,12 +1,46 @@
-@media (max-width: 575.98px) {
+@media (max-width: 1399.98px) {
+    .conditions__swiper-button-prev,
+    .conditions__swiper-button-next {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .vacancy__logo {
+        margin-right: 75px;
+        display: block;
+    }
+    .vacancy__logo img {
+        width: 90px;
+    }
+    .about__head {
+        padding-top: 20px;
+        flex-wrap: wrap;
+        max-width: 608px;
+    }
+    .about__item {
+        max-width: 230px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
     .container {
-        padding: 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .title {
         font-size: 22px;
     }
     .button {
         font-size: 14px;
+        max-width: none;
+    }
+    .vacancy .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .vacancy__title {
         font-size: 24px;
@@ -18,6 +52,7 @@
         line-height: 22px;
     }
     .vacancy__adress {
+        margin-top: 10px;
         max-width: 205px;
     }
     .vacancy__adress-mark {
@@ -30,12 +65,97 @@
         flex-wrap: wrap;
         width: 100%;
     }
+    .vacancy__buttons-wrapper {
+        max-width: 290px;
+    }
+    .vacancy__reply-btn {
+        margin: 0;
+        width: 100%;
+        margin-top: 55px;
+    }
+    .vacancy__contacts-btn {
+        max-width: 242px;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .vacancy__favorites-btn {
+        margin-top: 10px;
+    }
+    .about .container {
+        padding-top: 60px;
+        padding-bottom: 10px;
+        background: #ffffff;
+    }
+    .about__head {
+        flex-direction: column;
+    }
+    .about__item {
+        margin: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about__item img {
+        margin-right: 15px;
+    }
+    .about__item p {
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .info .container {
+        padding-bottom: 40px;
+    }
+    .info__main {
+        padding-right: 0;
+    }
+    .info .title {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .conditions .container {
+        padding-bottom: 120px;
+    }
+    .conditions .title {
+        text-align: center;
+    }
+    .conditions .container .swiper-pagination-bullets.swiper-pagination-horizontal {
+        width: auto;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .company {
+        background-position: bottom 40% left 50%;
+        text-align: center;
+    }
+    .company__button {
+        width: 100%;
+    }
+    .contact .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .contact__title {
+        text-align: center;
+    }
+    .contact__social,
+    .contact__sign-wrapper {
+        display: none;
+    }
 }
 
-@media (max-width: 767.98px) {}
-
-@media (max-width: 991.98px) {}
-
-@media (max-width: 1199.98px) {}
-
-@media (max-width: 1399.98px) {}
+@media (max-width: 575.98px) {
+    .vacancy__logo {
+        display: block;
+        margin: 0;
+        position: absolute;
+        right: 10px;
+        height: auto;
+        width: 64px;
+        top: 32%;
+    }
+    .vacancy__logo img {
+        width: 63px;
+    }
+}
