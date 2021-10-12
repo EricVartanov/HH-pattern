@@ -339,9 +339,11 @@ body {
     width: 100%;
 }
 
-.conditions-slide {
-    width: 100%;
-    height: 100%;
+.conditions-slide.swiper-slide {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .conditions-slide img {

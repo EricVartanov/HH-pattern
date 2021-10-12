@@ -24,7 +24,11 @@
     }
 }
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .conditions-slide.swiper-slide {
+        height: 120px;
+    }
+}
 
 @media (max-width: 767.98px) {
     .container {
@@ -119,6 +123,9 @@
     .conditions .title {
         text-align: center;
     }
+    .conditions-slide.swiper-slide {
+        height: 190px;
+    }
     .conditions .container .swiper-pagination-bullets.swiper-pagination-horizontal {
         width: auto;
         bottom: 70px;
@@ -157,5 +164,8 @@
     }
     .vacancy__logo img {
         width: 63px;
+    }
+    .conditions-slide.swiper-slide {
+        height: 190px;
     }
 }
