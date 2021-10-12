@@ -1,11 +1,10 @@
-@media (max-width: 1399.98px) {
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {
     .conditions__swiper-button-prev,
     .conditions__swiper-button-next {
         display: none;
     }
-}
-
-@media (max-width: 1199.98px) {
     .vacancy__logo {
         margin-right: 75px;
         display: block;
