@@ -17,10 +17,10 @@ const conditionsSwiper = new Swiper('.conditions__swiper', {
         },
         // when window width is >= 480px
         576: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20
         },
-        769: {
+        766: {
             slidesPerView: 3,
             spaceBetween: 30
         },

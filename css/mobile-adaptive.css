@@ -123,6 +123,9 @@
     .vacancy__link-wrapper {
         margin-top: 40px;
     }
+    .vacancy__buttons-row {
+        width: 100%;
+    }
     .vacancy__salary,
     .vacancy__hh-link {
         font-size: 18px;
@@ -142,8 +145,6 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 100%;
-    }
-    .vacancy__buttons-wrapper {
         margin-top: 3px;
         max-width: none;
     }
@@ -223,7 +224,7 @@
         line-height: 110%;
     }
     .conditions-slide.swiper-slide {
-        height: 190px;
+        height: 32vw;
     }
     .conditions .container .swiper-pagination-bullets.swiper-pagination-horizontal {
         width: auto;
@@ -295,7 +296,7 @@
         margin: 0 auto;
     }
     .conditions-slide.swiper-slide {
-        height: 190px;
+        height: 60vw;
     }
 }
 

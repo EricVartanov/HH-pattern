@@ -148,31 +148,65 @@ body {
 /* Добавляем свойство, чтобы при наведении на элемент плашка с подсказкой появилась */
 
 .vacancy__done-title {
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: visibility .2s ease, opacity .2s ease;
+    -o-transition: visibility .2s ease, opacity .2s ease;
+    transition: visibility .2s ease, opacity .2s ease;
     position: absolute;
     left: 50%;
     bottom: 100%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 200px;
+    padding: 8px 14px;
+    width: 260px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid #fff;
     padding: 5px 10px;
     color: #FFFFFF;
-    text-align: center;
     margin-bottom: 10px;
     background-color: #333333;
-    z-index: 5;
+    z-index: -1;
     visibility: hidden;
     opacity: 0;
-    font-family: 'Proxima Nova Condensed', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    word-wrap: break-word;
 }
 
-.vacancy__done-title::after {
+.vacancy__done-title>.title-arrow {
+    border-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.vacancy__done-title>.title-arrow:before,
+.vacancy__done-title>.title-arrow:after {
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: transparent;
+    content: "";
+    pointer-events: none;
+}
+
+.vacancy__done-title>.title-arrow:before {
+    border-width: 6px 6px 0;
+    margin-left: -6px;
+    border-top-color: #fff;
+}
+
+.vacancy__done-title>.title-arrow:after {
+    border-width: 5px 5px 0;
+    margin-left: -5px;
+    border-top-color: inherit;
+}
+
+
+/* .vacancy__done-title::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -183,7 +217,7 @@ body {
     border-style: solid;
     border-width: 10px 5px 0 5px;
     border-color: #333333 transparent transparent transparent;
-}
+} */
 
 .vacancy__done-img {
     position: relative;
@@ -191,14 +225,29 @@ body {
     display: inline-block;
     width: 12px;
     height: 9px;
+}
+
+.vacancy__done-img>.img-item {
+    display: block;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.vacancy__done-img:hover .vacancy__done-title {
-    visibility: visible;
-    opacity: 1;
+@media screen and (min-width: 1200px) {
+    .vacancy__done-img>.img-item:hover+.vacancy__done-title {
+        visibility: visible;
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .vacancy__done-title {
+        display: none;
+    }
 }
 
 .vacancy__adress {
@@ -252,7 +301,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
@@ -793,13 +841,4 @@ body {
     font-size: 12px;
     line-height: 140%;
     color: #333333;
-}
-
-.vacancy__buttons-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
 }
