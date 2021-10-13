@@ -25,21 +25,29 @@
                     <p class="vacancy__salary">от 60  000 руб. до вычета НДФЛ</p>
                     <div class="vacancy__link-wrapper">
                         <a class="vacancy__hh-link" href="#">hh.ru</a>
-                        <span class="vacancy__done-img" style="background-image: url(img/icons/doneicon.svg);"></span>
+                        <div class="vacancy__done-img" style="background-image: url(img/icons/doneicon.svg);">
+                            <span class="vacancy__done-title">
+                                Компания прошла проверку на сайте
+                            </span>
+                        </div>
+
                     </div>
                     <p class="vacancy__adress"><span class="vacancy__adress-mark-mobile"></span> Москва, <span class="vacancy__adress-mark"></span> Водный стадион, Олимпийский просп. 16, стр. 1</p>
                     <div class="vacancy__buttons-wrapper">
-                        <a href="#" class="vacancy__reply-btn button">Откликнуться</a>
-                        <a href="#" class="vacancy__contacts-btn button">Показать контакты</a>
-                        <a href="#" class="vacancy__favorites-btn button">
-                            <svg class="vaca icon" width="14px" height="14px">
-                                <use xlink:href="img/icons/icons.svg#Star"></use>
-                            </svg>
-                        </a>
+                        <a href="#contact" class="vacancy__reply-btn button">Откликнуться</a>
+                        <div class="vacancy__buttons-row">
+                            <a href="#" class="vacancy__contacts-btn button">Показать контакты</a>
+                            <a href="#" class="vacancy__favorites-btn button">
+                                <svg class="vaca icon" width="14px" height="14px">
+                                    <use xlink:href="img/icons/icons.svg#Star"></use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="vacancy__logo">
-                    <img src="img/logo.png" alt="hh-logo">
+                    <img src="img/logo.svg" alt="hh-logo">
                 </div>
             </div>
         </section>
@@ -81,7 +89,7 @@
         <section class="info">
             <div class="container">
                 <div class="info__main">
-                    <h1 class="title">Обязанности</h1>
+                    <h1 class=" title info__title">Обязанности</h1>
                     <ul class="info__list">
                         <li class="info__list-item">Подготовка подходящих заказчику предложений и презентация онлайн, консультирование клиентов по реализации брендинговых сервисов в постпродажный период</li>
                         <li class="info__list-item">Отсутствие функционала продаж, только консультативное общение с клиентами по телефону и в чатах с соблюдением коммуникативных норм</li>
@@ -104,7 +112,7 @@
                         <li class="info__list-item">Будет преимуществом понимание web-разработки и/или опыт работы проектным менеджером в web или desain студии</li>
                     </ul>
 
-                    <h1 class="title">Условия</h1>
+                    <h1 class="title info__last-title">Условия</h1>
                     <p class="info__subtitle">HeadHunter - современная технологичная компания с качественными продуктами. <br> Мы даем большое количество возможностей своим сотрудникам:</p>
                     <ul class="info__list">
                         <li class="info__list-item">Достойная заработная плата (выше среднего уровня, предлагаемого на рынке труда)</li>
@@ -127,11 +135,13 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="conditions-slide swiper-slide" style="background-image: url(img/office-man.png);"></div>
-                            <div class="conditions-slide swiper-slide" style="background-image: url(img/kitchen.png);"></div>
+                            <div class="conditions-slide swiper-slide" style="background-image: url(img/kitchen.png);">
+                            </div>
                             <div class="conditions-slide swiper-slide" style="background-image: url(img/office-man2.png);"></div>
                             <div class="conditions-slide swiper-slide" style="background-image: url(img/office-woman.png);"></div>
                             <div class="conditions-slide swiper-slide" style="background-image: url(img/office-cabines.png);"></div>
-                            <div class="conditions-slide swiper-slide" style="background-image: url(img/office.png);"></div>
+                            <div class="conditions-slide swiper-slide" style="background-image: url(img/office.png);">
+                            </div>
                         </div>
                     </div>
                     <!-- If we need navigation buttons -->
@@ -161,7 +171,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="contact__wrapper">
                     <h3 class="contact__title">Оставьте свои контактные данные, чтобы работодатель смог связаться с вами
